@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="iconFont" horiz-adv-x="61.02576808721506">
+    <font-face font-family="iconFont"
+      units-per-em="100" ascent="100"
+      descent="0"
+      font-weight="300" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="next"
+      unicode="&#xEA01;"
+      horiz-adv-x="61.02576808721506" d="M16.9474727452924 0L0 14.6927651139742L31.0703666997027 50.2725470763132L1.1397423191279 85.3072348860258L18.0872150644202 100L61.0257680872151 50.2725470763132z" />
+    <glyph glyph-name="prev"
+      unicode="&#xEA02;"
+      horiz-adv-x="61.02576808721506" d="M44.0782953419227 100L61.0257680872151 85.3072348860258L29.9554013875124 49.7274529236868L59.8860257680872 14.6927651139742L42.9385530227949 0L0 49.7274529236868z" />
+  </font>
+</defs>
+</svg>

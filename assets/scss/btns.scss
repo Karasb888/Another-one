@@ -1,0 +1,89 @@
+[class^="btn-"],
+[class*=" btn-"] {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.nav-btn{
+  font-family: $gotham-medium;
+  font-size: 11.75px;
+  text-transform: uppercase;
+  color: #414252;
+  line-height: 30px;
+  cursor: pointer;
+  &:active, &:focus{
+    color: #ab2970;
+  }
+}
+.lang-btn{
+  cursor: pointer;
+  color: #ab2970;
+  position: relative;
+  font-size: 11.75px;
+  font-family: $gotham-medium;
+  line-height: 30px;
+  text-align: right;
+  width: 65px;
+  padding: 0 8px;
+  border: 2px solid #dbdee2;
+  border-radius: 20px;
+  text-transform: uppercase;
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: calc(50% - 8px);
+    background: #dbdee2;
+  }
+}
+.order-btn{
+  cursor: pointer;
+  width:180px;
+  line-height: 50px;
+  background: #a70c5d;
+  border-radius: 24px;
+  font-family: $gotham-black;
+  padding-left: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  color: #ffffff;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: calc(50% - 11px);
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.hasHover{
+  .nav-btn{
+    &:hover{
+      color: #ab2970;
+      &:after{
+        width: 100%;
+      }
+    }
+    &:after{
+      margin-top: -5px;
+      display: block;
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: #ab2970;
+      transition: width .3s ease-in-out;
+    }
+  }
+}
