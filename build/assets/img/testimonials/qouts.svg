@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 70.101px;
+        filter: url(#filter);
+        fill: #fb4040;
+        font-family: PFDinDisplayPro;
+        text-transform: uppercase;
+      }
+    </style>
+    <filter id="filter" x="76" y="1629" width="20" height="15" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c9cacf"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="_" data-name="   ,," class="cls-1" transform="translate(22.655 136.321) rotate(180) scale(0.87 0.869)"><tspan dy="90.01">,,</tspan></text>
+</svg>

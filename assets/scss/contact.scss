@@ -1,0 +1,201 @@
+.contact{
+  margin-top: 102px;
+  @media(max-width: $max-md){
+    margin-top: 70px;
+  }
+  &--container{
+
+  }
+  &--form{
+
+  }
+  &--pop-up{
+    display: none;
+    min-width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    background: #0000002b;
+    transition: 0.3s;
+    animation-name: show;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    &.open{
+      display: block;
+    }
+  }
+  &--content-pop-up{
+    background-position: 50% 16%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/popup.jpg);
+    position: absolute;
+    top: 25%;
+    width: 450px;
+    max-width: 90%;
+    height: 250px;
+    left: calc(50% - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: $gotham-medium;
+    border-radius: 10px;
+  }
+  &--close{
+    position: absolute;
+    top: -13px;
+    background-size: contain;
+    right: -13px;
+    font-size: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/close.png);
+    padding: 15px;
+    cursor: pointer;
+  }
+}
+.form{
+  &--submit{
+    display: block;
+    margin: 40px auto 0;
+    padding: 0;
+    text-align: center;
+    &:after{
+      display: none;
+    }
+  }
+  &--container{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    margin-top: 49px;
+    @media(max-width: $max-sm){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &--basic{
+    width: 380px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    @media(max-width: $max-sm){
+      margin-right: 0;
+    }
+    input{
+      height: 30px;
+      line-height: 20px;
+      font-family:$gotham-bold;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin-bottom: 19.5px;
+      border: none;
+      border-bottom: 1px solid #dcdcdc;
+      &::placeholder{
+        font-family:$gotham-medium ;
+      }
+    }
+  }
+  &--information{
+    display: block;
+    width: 380px;
+    max-width: 100%;
+    font-family: $gotham-medium;
+    font-size: 11px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    @media(max-width: $max-sm){
+      margin-top: 35px;
+    }
+    textarea{
+      width: 100%;
+      display: block;
+      border-color: #dcdcdc;
+      box-sizing: border-box;
+      padding: 15px 10px 10px 10px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-family: $gotham-medium;
+      resize: none;
+      line-height: 20px;
+      &::placeholder{
+        font-family:$gotham-regular ;
+        font-size: 15px;
+      }
+    }
+  }
+  &--interesting{
+    margin-top: 32px;
+  }
+  &--additional{
+    width: 100%;
+    font-size: 11px;
+    cursor: pointer;
+    border: 1px solid #dcdcdc;
+    padding-left: 22px;
+    text-align: left;
+    font-family: $gotham-medium;
+    line-height: 50px;
+    text-transform: uppercase;
+    background-image: url(../img/testimonials/up-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-color: #fcfcfd;
+  }
+  &--services{
+    padding-left: 21px;
+    display: none;
+    padding-top: 16px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    &.active{
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid #dcdcdc;
+      border-right: 1px solid #dcdcdc;
+      border-bottom: 1px solid #dcdcdc;
+
+    }
+    input{
+      display: none;
+      &:checked+label{
+          color: #a70c5d;
+          &:before{
+            background-image: url(../img/testimonials/list-dot-active.png);
+        }
+      }
+    }
+  }
+  &--service{
+    font-size: 13px;
+    font-family: $gotham-regular;
+    line-height: 30px;
+    padding-left: 25px;
+    cursor: pointer;
+    position: relative;
+    &:before{
+      content: '';
+      top: calc(50% - 4px);
+      left: 0;
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/testimonials/listdot.png);
+    }
+  }
+
+}
+@keyframes show{
+  0%{
+    opacity: 0;
+    background: transparent;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "gulpfile.js",
   "devDependencies": {
-    "gulp": "latest",
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
     "gulp-cssnano": "latest",

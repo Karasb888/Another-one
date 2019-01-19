@@ -111,4 +111,4 @@ gulp.task('watch', function() {
 
 
 // Default task
-gulp.task('default', [ 'sass', 'scripts', 'Iconfont', 'fonts', 'fileinclude', 'images', 'webserver', 'watch']);
+gulp.task('default', [ 'sass', 'scripts', 'fonts', 'fileinclude', 'images', 'webserver', 'watch']);

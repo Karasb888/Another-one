@@ -18,6 +18,11 @@
 
 .icon-next{
 	&:before{
-		content: '\eA01';
+		content: '\EA08';
+	}
+}
+.icon-prev{
+	&:before{
+		content: '\EA0D';
 	}
 }

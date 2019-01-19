@@ -1,0 +1,160 @@
+.testimonials{
+  @media(max-width: $max-sm){
+    margin-top: 30px;
+  }
+  &--additional{
+    display: none;
+  }
+  .slick-arrow{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 45%;
+    font-size: 50px;
+    color: $pink;
+    @media(max-width: $max-sm){
+      top: 35%;
+    }
+    @media(max-width: 500px){
+      display: none !important;
+    }
+  }
+  .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: -42px;
+    width: 100%;
+    justify-content: center;
+    li {
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/testimonials/listdot.png);
+      margin: 0 6px;
+      button{
+        font-size: 0;
+      }
+    }
+    .slick-active{
+      background-image: url(../img/testimonials/list-dot-active.png);
+    }
+  }
+  .slick-disabled{
+    color: grey;
+  }
+  .slick-prev{
+    left: -60px;
+  }
+  .slick-next{
+    right: -60px;
+  }
+  &--container{
+
+  }
+  &--title{
+    margin-top: -10px;
+  }
+  &--blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    max-width: 100%;
+    margin-bottom: 65px;
+    flex-wrap: wrap;
+    @media(max-width: $max-md){
+      width: 450px;
+      margin: 35px auto 65px;
+    }
+    @media(max-width: $max-sm){
+      width: 305px;
+      margin-top: 20px;
+    }
+  }
+  &--block{
+    width: 305px;
+    max-width: 100%;
+    padding-top: 50px;
+    cursor: pointer;
+    video{
+      width: 100%;
+      height: auto;
+    }
+    @media(min-width: $max-md){
+      margin-bottom: 25px;
+    }
+  }
+  &--content{
+    height: 200px;
+    font-size: 17px;
+    font-family: $gotham-regular;
+    line-height: 25px;
+    margin-bottom: 23px;
+    position: relative;
+    &.content-text{
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -36px;
+        background-image: url(../img/testimonials/qouts.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    &.content-video{
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -36px;
+        background-image: url(../img/testimonials/video.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &--photo{
+    margin-top: -63px;
+    margin-bottom: 13px;
+  }
+  &--company{
+    margin-top: 22px;
+    display: flex;
+    font-size: 12px;
+  }
+  &--name{
+    font-family: $gotham-bold;
+    font-size: 13px;
+  }
+  &--position{
+    font-family: $gotham-regular;
+    margin-right: 18px;
+    position: relative;
+    &:after{
+      content: '\00B7';
+      display: block;
+      color: red;
+      font-size: 22px;
+      position: absolute;
+      right: -10px;
+      top: -5px;
+    }
+  }
+  &--site{
+    font-family: $gotham-bold;
+  }
+}
+.hasHover{
+  .testimonials--block{
+    &:hover{
+      .testimonials--name{
+        color: $pink;
+      }
+    }
+  }
+}

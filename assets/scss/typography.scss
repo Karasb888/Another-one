@@ -1,4 +1,28 @@
-h1,h2,h3,h4,h5,h6{
-  margin-top: 0;
-  margin-bottom: 10px;
+.bold-text{
+  font-family: $gotham-bold;
+}
+.section--title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  font-family: $gotham-bold;
+  line-height: 30px;
+  margin: 0 auto;
+  display: block;
+  &:after{
+    display: block;
+    margin: 0 auto;
+    content: '';
+    width: 40px;
+    border: 1px solid $pink;
+    margin-top: 14px;
+  }
+}
+.section--subtitle{
+  text-align: center;
+  margin: 0 auto;
+  font-family: $gotham-regular;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 14px;
 }

@@ -1,0 +1,33 @@
+<!-- .contact -->
+<section class="contact" id='contact'>
+  <div class="container contact--container">
+    <h3 class='section--title'>Запрос на услуги</h3>
+    <form class='contact--form form' action='index.html' method="GET">
+      <div class="form--container">
+        <div class="form--basic">
+          <input required placeholder='Имя*' type="text" name='Name'>
+          <input required placeholder='Телефон*' type="tel" name='Tell'>
+          <input required placeholder='Email*' type="email" name='Email'>
+          <input placeholder='Сайт' type="text">
+          <div class="form--interesting">
+            <button type='button' class="form--additional" id='additional-btn'>Меня интересует</button>
+            <div class="form--services" id='checkBoxGroup'>
+              <input id='the-order' type="checkbox" value='the-order' name='interesting'>
+              <label for="the-order" class="form--service">Наведение порядка в делах</label>
+              <input id='law-support' type="checkbox" value='law-support' name='interesting'>
+              <label for="law-support" class="form--service">Правовое сопровождение деятельности</label>
+              <input id='optimization-deals' type="checkbox" value='optimization-deals' name='interesting'>
+              <label for="optimization-deals" class="form--service">Оптимизация договорных отношений</label>
+              <input id='develop-contacts' type="checkbox" value='develop-contacts' name='interesting'>
+              <label for="develop-contacts" class="form--service">Разработка договоров</label>
+            </div>
+          </div>
+        </div>
+        <label for='form--information' class='form--information'>Дополнительная информация<textarea placeholder='Введите текст ...' name="information" id="form-information" cols="30" rows="11"></textarea></label>
+      </div>
+      <button type='submit' class='form--submit submit-btn' id='submit'>Отправить</button>
+    </form>
+  </div>
+  <div class="contact--pop-up" id='popup'><div class='contact--content-pop-up'>Ваш запрос успешно отправлен!<button id='popup-close' class='contact--close'></button></div></div>
+</section>
+<!-- END of .contact-->
